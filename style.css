@@ -1,91 +1,69 @@
-
-* {
+body, h1, h2, h3, p, a {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    text-decoration: none;
 }
-
-/* Simple font import from Google Fonts; you can choose others */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    font-size: 16px;
-    line-height: 1.5;
+    font-family: 'Lucida Sans', sans-serif;
+    line-height: 1.7;
+    background-color: #e9eff3;
+    color: #2c3e50;
+    padding: 30px;
 }
 
-.container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+.wrapper, header, nav, section, article, footer {
+    max-width: 920px;
+    margin: 25px auto;
+    background: #fff;
+    padding: 25px 35px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-h1, h2, h3 {
-    font-weight: 700;
-    margin-bottom: 20px;
+header {
+    text-align: center;
+    background-color: #34495e;
+    color: #eaeaea;
+    border-radius: 8px 8px 0 0; 
 }
 
-h1 {
-    font-size: 2.5em;
-}
-
-h2 {
-    font-size: 2em;
+h1, h2 {
+    margin-bottom: 18px;
 }
 
 h3 {
-    font-size: 1.5em;
+    margin-top: 25px;
+    border-bottom: 2px dashed #bdc3c7;
+    padding-bottom: 12px;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+nav a {
+    color: #34495e;
+    margin: 0 15px;
+    padding: 8px 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    background-color: #34495e;
+    color: #eaeaea;
 }
 
 p {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
-a {
-    color: #007BFF;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: #0056b3;
-}
-
-/* Style for a navigation menu if you have one */
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-}
-
-.nav a {
-    color: #fff;
-    margin-left: 20px;
-}
-
-.nav a:hover {
-    text-decoration: underline;
-}
-
-/* A button style */
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.button:hover {
-    background-color: #0056b3;
+footer {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 2px solid #bdc3c7;
+    padding-top: 15px;
 }
